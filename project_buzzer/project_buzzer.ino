@@ -1,21 +1,16 @@
-const int pinBuzzer = 2;
-
+const int pinBuzzer=2; //pinBuzzer pada pin 2
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(pinBuzzer, OUTPUT);
+pinMode(pinBuzzer,OUTPUT); //pinBuzzer sebagai output
 }
-
 void loop() {
-  // put your main code here, to run repeatedly:
-  //bunyi pendek
-  digitalWrite(pinBuzzer, HIGH);
-  delay(100);
-  digitalWrite(pinBuzzer, LOW);
-  delay(100);
-
-  //bunyi panjang
-  digitalWrite(pinBuzzer, HIGH);
-  delay(1000);
-  digitalWrite(pinBuzzer, LOW);
-  delay(1000);
+//nada pendek
+digitalWrite(pinBuzzer,HIGH); //menyalakan Buzzer
+delay(100); //Buzzer menyala dengan nada pendek karena delay hanya 100ms
+digitalWrite(pinBuzzer,LOW);
+delay(100);
+//nada panjang
+digitalWrite(pinBuzzer,HIGH);
+delay(1000);
+digitalWrite(pinBuzzer,LOW);
+delay(1000);
 }
