@@ -1,0 +1,21 @@
+#old_price_display{text-decoration: line-through;}
+#layer_cart {width:84%;    z-index: 99999;}.tabs-group {padding:0}
+.page-product-box {display: inline-block;width:100%}
+.pb-left-column {overflow:hidden}
+#order #footer {min-height:0}
+#order h1.page-heading{display:none}
+.morphing-glowing {width:271px}
+#index #left_column .widget{float:left!important;z-index:9999}
+#left_column .widget{float:none!important;z-index:9999}
+@media (min-width: 768px){div.verticalmenu .widget-heading {color: #333!important;}}
+@media (max-width: 768px){
+div.verticalmenu .navbar-nav > li .caret {width:100px;}
+div.verticalmenu .navbar-nav > li .caret:before{width:100px;text-align:center}
+div.verticalmenu .dropdown-menu ul li a {color: white;}}
+.leo-verticalmenu .title_block .icon {height:43px;line-height:43px;padding-left:10px}
+#leo-verticalmenu .title_block {padding-right:30px;}
+.nav-pills {margin:10px 0}
+.product-block .product-detail{display:none}
+.header_user_info_ps16 {display:none}
+#header_logo a {padding:0}
+@media (max-width: 991px){.float-vertical > .block_content {display:none}}
