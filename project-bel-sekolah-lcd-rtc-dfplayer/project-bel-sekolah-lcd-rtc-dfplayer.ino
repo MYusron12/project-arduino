@@ -8,14 +8,10 @@ LiquidCrystal_I2C lcd(0x27, 16, 12);
 SoftwareSerial mySerial(2, 3); //di pasangkan ke pin d2, d3
 DS3231 rtc(SDA, SCL);
 Time t;
-const int buzzer = 8;
-//variable bertipe integer dengan nama busyPin yg berisi 4
-//const int busyPin = 4;
 int Hour;
 int Min;
 int Sec;
 void setup() {
-  pinMode(buzzer, OUTPUT);
   mySerial.begin(9600);
   //fungsi pada df player untuk memulai
   mp3_set_serial(mySerial);
@@ -55,14 +51,7 @@ void loop() {
     Sec = t.sec;
     if(Hour == 7 && Min == 00 && Sec == 00){
       tampilkan("Jam pelajaran 1");
-      digitalWrite(buzzer, HIGH);
-      delay(1000);
-      digitalWrite(buzzer, LOW);
-      delay(500);
-      digitalWrite(buzzer, HIGH);
-      delay(1000);
-      digitalWrite(buzzer, LOW);
-      //fungsi untuk melakukan pemutaran lagu pertama
+      //fungsi untuk melakukan pemutaran suara pertama
       mp3_play(1);
     }
   }

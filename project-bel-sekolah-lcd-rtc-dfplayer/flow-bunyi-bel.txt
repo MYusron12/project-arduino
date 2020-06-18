@@ -1,0 +1,11 @@
+Hari : senin s/d jumat
+pukul		keterangan
+07.00		masuk jam pertama
+09.00		pergantian jam ke-2
+09.40		istirahat pertama
+10.00		masuk kelas
+10.40		pergantian jam ke-3
+12.00		istirahat kedua
+13.00		masuk kelas
+14.10		pergantian jam ke-4
+15.30		pulang sekolah
