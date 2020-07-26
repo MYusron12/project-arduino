@@ -1,11 +1,60 @@
 Hari : senin s/d jumat
 pukul		keterangan
-07.00		masuk jam pertama
-09.00		pergantian jam ke-2
-09.40		istirahat pertama
-10.00		masuk kelas
-10.40		pergantian jam ke-3
-12.00		istirahat kedua
-13.00		masuk kelas
-14.10		pergantian jam ke-4
-15.30		pulang sekolah
+07.00		masuk jam pertama / (1)
+09.00		pergantian jam ke-2 / (2)
+09.40		istirahat pertama / (3)
+10.00		masuk kelas / (8)
+10.40		pergantian jam ke-3 / (4)
+12.00		istirahat kedua / (5)
+13.00		masuk kelas / (8)
+14.10		pergantian jam ke-4 / (6)
+15.30		pulang sekolah / (7)
+
+else(Hour == 7 && Min == 05 && Sec == 00){
+      tampilkan("Pergantian Jam ke-2");
+      //fungsi untuk melakukan pemutaran suara kedua
+      mp3_play(2);
+    }
+
+
+if(Hour == 9 && Min == 00 && Sec == 00){
+      tampilkan("Jam Pelajaran 2");
+      //fungsi untuk melakukan pemutaran suara kedua
+      mp3_play(2);
+    }
+    
+    if(Hour == 9 && Min == 40 && Sec == 00){
+      tampilkan("Istirahat ke-1");
+      //fungsi untuk melakukan pemutaran suara ketiga
+      mp3_play(3);
+    }
+    if(Hour == 10 && Min == 00 && Sec == 00){
+      tampilkan("Masuk Kelas");
+      //fungsi untuk melakukan pemutaran suara istirahat
+      mp3_play(8);
+    }
+    if(Hour == 10 && Min == 40 && Sec == 00){
+      tampilkan("Jam Pelajaran 3");
+      //fungsi untuk melakukan pemutaran suara keempat
+      mp3_play(4);
+    }
+    if(Hour == 12 && Min == 00 && Sec == 00){
+      tampilkan("Istirahat ke-2");
+      //fungsi untuk melakukan pemutaran suara kelima
+      mp3_play(5);
+    }
+    if(Hour == 13 && Min == 00 && Sec == 00){
+      tampilkan("Masuk Kelas");
+      //fungsi untuk melakukan pemutaran suara istirahat
+      mp3_play(8);
+    }
+    if(Hour == 14 && Min == 10 && Sec == 00){
+      tampilkan("Jam Pelajaran 4");
+      //fungsi untuk melakukan pemutaran suara keenam
+      mp3_play(6);
+    }
+    if(Hour == 15 && Min == 30 && Sec == 00){
+      tampilkan("Pulang Sekolah");
+      //fungsi untuk melakukan pemutaran suara pulang
+      mp3_play(7);
+    }
